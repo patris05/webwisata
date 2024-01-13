@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Belajar Javascript</title>
+</head>
+
+<body>
+    <h1>Mahasiswa</h1>
+
+    <div>
+        NIM :
+        <input type="text" id="nim"></div>
+    <div>
+        Nama :
+        <input type="text" id="nama">
+    </div>
+    <div>
+        Gender :
+        <input type="radio" name="gender" value="Laki - laki" checked> Laki - laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan
+    </div>
+
+    <div>
+        <input type="button" value="Kirim" id="kirim">
+    </div>
+
+
+    <script>
+        var nim = document.getElementById("nim");
+        var nama = document.getElementById("nama");
+        var btnKirim = document.getElementById("kirim");
+        
+        btnKirim.addEventListener("click", function(){
+            let gender = document.querySelector('input[name="gender"]:checked').value;
+            
+            document.write("NIM : " + nim.value + 
+            " <br> Nama: " + nama.value + 
+            " <br> Gender: " + gender);
+        });
+        
+
+    </script>
+    
+</body>
+
+</html>

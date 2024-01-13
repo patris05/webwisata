@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+}
+
+li {
+    float: left;
+    padding: 10px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.navbar {
+    min-width: 50px;
+    background-color: rgba(13, 163, 205, 0.243);
+    opacity: 30px;
+}
+
+.kotak1 {
+    float: right;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.text {
+    margin-left: 70px;
+}
+
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.jumbotron {
+    height: 800px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.float {
+    float: right;
+}
+
+.kotak2 {
+    margin-left: 25px;
+    padding-top: 100px;
+    color: white;
+}
+
+.jumbotron .kotak2 {
+    font-size: 50px;
+}
+
+.heading h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
