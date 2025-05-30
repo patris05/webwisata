@@ -1,12 +1,15 @@
+/* Reset dasar */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* List menu */
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     height: 80px;
     width: 100%;
@@ -26,50 +29,89 @@ li a {
     text-decoration: none;
 }
 
+/* Navbar */
 .navbar {
-    min-width: 50px;
     background-color: rgba(13, 163, 205, 0.243);
-    opacity: 30px;
+    min-width: 50px;
 }
 
+/* Teks kanan atas */
 .kotak1 {
     float: right;
     font-family: sans-serif;
     font-weight: bold;
 }
 
+/* Posisi teks tambahan */
 .text {
     margin-left: 70px;
 }
 
+/* Background halaman */
 body {
-    background-image: url('bg.jpg');
+    background-image: url('../assets/Wairinding.jpg'); /* Ganti jika file tidak ada */
     background-size: cover;
-}
-
-.jumbotron {
-    height: 800px;
-    margin-top: 20px;
+    background-position: center;
+    background-attachment: fixed;
     font-family: sans-serif;
 }
 
-.float {
-    float: right;
+/* Jumbotron style */
+.jumbotron {
+    min-height: 100vh;
+    padding: 50px 0;
 }
 
+/* Kotak teks di tengah */
 .kotak2 {
     margin-left: 25px;
-    padding-top: 100px;
+    padding-top: 50px;
     color: white;
 }
 
 .jumbotron .kotak2 {
-    font-size: 50px;
+    font-size: 20px;
 }
 
+/* Judul */
 .heading h1 {
     font-size: 30px;
     font-family: sans-serif;
     text-align: center;
+    padding: 20px;
+    color: white;
 }
 
+/* Card */
+.card {
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsif tambahan untuk mobile */
+@media (max-width: 768px) {
+    .kotak2 {
+        margin-left: 0;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .jumbotron {
+        padding: 20px 10px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}
